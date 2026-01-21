@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - sahaba Water</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+             <div class="logo">
+    <img src="logo.png" alt="sahaba Logo" style="height: 50px;">
+</div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-primary cart-btn">
+                        <i class="fas fa-shopping-cart"></i> 
+                        <span class="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium water bottles for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-controls">
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="size-small">Size: Small to Large</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-price="1.50" data-size="150">
+                    <div class="product-image">
+                        <div class="bottle-placeholder small"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 150ml</h3>
+                        <p class="product-desc">Perfect for kids and on-the-go refreshment</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 150ml</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 24</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 1.50</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 150ml', 1.50)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-price="1.75" data-size="330">
+                    <div class="product-image">
+                        <div class="bottle-placeholder small-med"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 330ml</h3>
+                        <p class="product-desc">Ideal personal size for work or school</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 330ml</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 24</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 1.75</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 330ml', 1.75)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card featured" data-price="2.00" data-size="500">
+                    <div class="badge">Best Seller</div>
+                    <div class="product-image">
+                        <div class="bottle-placeholder medium"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 500ml</h3>
+                        <p class="product-desc">Most popular size for everyday hydration</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 500ml</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 24</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 2.00</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 500ml', 2.00)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-price="2.50" data-size="750">
+                    <div class="product-image">
+                        <div class="bottle-placeholder med-large"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 750ml</h3>
+                        <p class="product-desc">Extended hydration for active lifestyles</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 750ml</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 12</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 2.50</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 750ml', 2.50)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-price="3.00" data-size="1000">
+                    <div class="product-image">
+                        <div class="bottle-placeholder large"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 1L</h3>
+                        <p class="product-desc">Perfect for sharing with family</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 1L</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 12</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 3.00</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 1L', 3.00)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-price="3.50" data-size="1500">
+                    <div class="product-image">
+                        <div class="bottle-placeholder x-large"></div>
+                        <div class="product-overlay">
+                            <button class="btn-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>sahaba 1.5L</h3>
+                        <p class="product-desc">Family size for home and gatherings</p>
+                        <div class="product-details">
+                            <span class="product-size"><i class="fas fa-bottle-water"></i> 1.5L</span>
+                            <span class="product-pack"><i class="fas fa-box"></i> Pack of 12</span>
+                        </div>
+                        <div class="product-bottom">
+                            <span class="product-price">AED 3.50</span>
+                            <button class="btn-add-cart" onclick="addToCart('sahaba 1.5L', 3.50)">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Order Section -->
+    <section class="bulk-section">
+        <div class="container">
+            <div class="bulk-content">
+                <h2><i class="fas fa-warehouse"></i> Bulk Orders Available</h2>
+                <p>Need larger quantities? Contact us for special pricing on bulk orders and corporate packages.</p>
+                <a href="contact.html" class="btn-secondary">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Item added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>sahaba</h3>
+                    <p>Your trusted source for pure, refreshing water. Quality you can taste, purity you can trust.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +971 XX XXX XXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@sahaba.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Abu Dhabi, UAE</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 sahaba Water Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
